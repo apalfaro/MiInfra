@@ -1,0 +1,13 @@
+{
+  "version": "0.17.3",
+  "stacks": {
+    "MiInfra": {
+      "name": "MiInfra",
+      "constructPath": "MiInfra",
+      "workingDirectory": "stacks/MiInfra",
+      "synthesizedStackPath": "stacks/MiInfra/cdk.tf.json",
+      "annotations": [],
+      "dependencies": []
+    }
+  }
+}
