@@ -1,0 +1,47 @@
+{
+  "//": {
+    "metadata": {
+      "backend": "cloud",
+      "cloud": "tfc",
+      "stackName": "MiS3",
+      "version": "0.17.3"
+    },
+    "outputs": {
+    }
+  },
+  "provider": {
+    "aws": [
+      {
+        "region": "us-east-2"
+      }
+    ]
+  },
+  "resource": {
+    "aws_s3_bucket": {
+      "MyBucket": {
+        "//": {
+          "metadata": {
+            "path": "MiS3/MyBucket",
+            "uniqueId": "MyBucket"
+          }
+        },
+        "bucket": "aalfaro-my-bucket"
+      }
+    }
+  },
+  "terraform": {
+    "cloud": {
+      "hostname": "app.terraform.io",
+      "organization": "example-org-bc86fc",
+      "workspaces": {
+        "name": "MiS3"
+      }
+    },
+    "required_providers": {
+      "aws": {
+        "source": "aws",
+        "version": "5.10.0"
+      }
+    }
+  }
+}
